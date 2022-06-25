@@ -1,0 +1,36 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
+             x:Class="AvaloniaDemo.Views.ToDoListView">
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        <Image HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="10, 10, 0, 0"
+                Width="14"
+                Height="14"
+                Source="/Assets/avalonia-logo.ico" />
+        <Label DockPanel.Dock="Top" Margin="30, 6, 0, 0" HorizontalAlignment="Left">Avalonia Demo</Label>
+        <DockPanel Margin="20, 30, 20, 20">
+            <Button DockPanel.Dock="Bottom"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center">
+                    Add an item
+            </Button>
+            <StackPanel>
+                <CheckBox Margin="4">Walk the dog</CheckBox>
+                <CheckBox Margin="4">Buy some milk</CheckBox>
+            </StackPanel>
+        </DockPanel>
+    </Panel>
+</UserControl>
